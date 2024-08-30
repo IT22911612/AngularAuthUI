@@ -1,0 +1,103 @@
+/* General outer container styles */
+.outer {
+    min-height: 100vh;
+    background: linear-gradient(to top, #c9c9ff 50%, #6e6ef6 80%) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Centering the panel with a box-shadow and rounded corners */
+.panel {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 10px; /* Reduced padding */
+    background-color: #fff;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Aligning the heading with consistent margins */
+.panel-heading {
+    text-align: center;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    font-size: 18px; /* Slightly reduced font size */
+}
+
+/* Styling the forget password link */
+#forget {
+    min-width: 120px;
+    margin-left: auto;
+    text-decoration: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+#forget:hover {
+    text-decoration: underline;
+}
+
+/* Input field styles for better alignment */
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-bottom: 8px; /* Reduced margin */
+    transition: border 0.3s ease;
+}
+
+.input-field.error {
+    border: 1px solid red;
+    color: red;
+}
+
+/* Proper input field styling */
+.input-field input{
+    outline: none;
+    box-shadow: none;
+    flex: 1;
+    padding-left: 8px;
+    font-size: 14px;
+    border: none;
+}
+
+.input-field span.fa {
+    cursor: pointer;
+}
+
+/* Improving button appearance with rounded corners */
+.btn {
+    margin-top: 15px; /* Reduced margin */
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Centering and spacing the signup link */
+.text-muted a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .panel {
+        padding: 8px; /* Reduced padding */
+        max-width: 300px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
